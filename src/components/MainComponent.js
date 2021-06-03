@@ -8,6 +8,7 @@ import { DISHES } from "../shared/dishes";
 import { COMMENTS } from "../shared/comments";
 import { PROMOTIONS } from "../shared/promotion";
 import { LEADERS } from "../shared/leaders";
+import About from "./AboutComponent";
 
 import Header from "./HeaderComponent";
 import Footer from "./FooterComponent";
@@ -63,6 +64,12 @@ class Main extends Component {
             path="/menu"
             component={() => <Menu dishes={this.state.dishes} />}
           />
+          <Route
+            exact
+            path="/aboutus"
+            component={() => <About leaders={this.state.leaders} />}
+          />
+
           <Redirect to="/home" />
         </Switch>
         <Footer />
