@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import DishDetail from "./DishdetailComponent";
 import {
   Card,
   CardImg,

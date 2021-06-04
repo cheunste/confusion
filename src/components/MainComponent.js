@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Home from "./HomeComponent";
-import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "./MenuComponent";
 import DishDetail from "./DishdetailComponent";
 import Contact from "./ContactComponent";
