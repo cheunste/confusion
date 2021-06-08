@@ -14,7 +14,7 @@ import { Control, LocalForm, Errors } from "react-redux-form";
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
 const minLength = (len) => (val) => val && val.length >= len;
-const isNumber = (len) => (val) => !isNaN(Number(val));
+const isNumber = (val) => !isNaN(Number(val));
 const validEmail = (val) =>
   /^[A-Z0-9._%+-]+@[A-Z0-9._%+-]+\.[A-Z0-9._%+-]{2,4}$/i.test(val);
 
