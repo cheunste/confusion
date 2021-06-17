@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { baseUrl } from "../shared/baseUrl";
 import {
   Card,
   CardImg,
@@ -27,7 +28,7 @@ function RenderDish({ dish }) {
   if (dish != null)
     return (
       <Card>
-        <CardImg width="100%" top src={dish.image} alt={dish.name} />
+        <CardImg width="100%" top src={baseUrl + dish.image} alt={dish.name} />
         <CardBody>
           <CardTitle>{dish.name}</CardTitle>
           <CardImgOverlay>{dish.name}</CardImgOverlay>
